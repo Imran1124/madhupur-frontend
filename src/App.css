@@ -1,0 +1,397 @@
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  height: 92vh;
+  overflow: auto;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: calc(100% - 50px);
+  margin-left: auto;
+  /* padding: 15px; */
+  overflow: hidden;
+  height: 100%;
+  word-break: break-word;
+}
+.content2 {
+  width: calc(100% - 250px);
+  margin-left: auto;
+  /* padding: 15px; */
+  height: 100%;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  overflow: auto;
+  background-color: #0F766E;
+  transition: width 0.3s ease;
+  padding-top: 15px;
+  border-right: 1px solid rgb(216, 205, 205);
+}
+.sidebar-positions {
+  top: 0;
+  padding: 10px 0px 10px 45px;
+  width: 100%;
+  margin-left:5px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: auto;
+  background-color: #0d9488;
+  transition: width 0.3s ease;
+}
+.sidebar .sidebar-position:hover {
+  background-color: #bfdbfe;
+  color: #0d9488;
+  /* margin: 4px;
+  /* margin:4px; */
+  border-radius: 8px;
+}
+
+.image {
+  background-image: url(./assets/logo.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image2 {
+  height: 40vh;
+  width: 35vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-dialog {
+  border: none;
+  position: absolute;
+}
+.sidebaruser {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+input.address {
+  height: 20px;
+  width: 20px;
+  margin-left: 70px;
+}
+.sidebarimg {
+  height: 150px;
+  width: 500px;
+  border-radius: 50%;
+  border: 1px solid #0F766E;
+}
+.sidebar .sidebar-position {
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 6px 0px 10px;
+  text-align: left;
+}
+.subsidebar-position {
+  height: 50px;
+  display: block;
+  cursor: pointer;
+  padding: 10px 12px;
+  text-align: left;
+  margin-left: 35px;
+  margin-top: 70px;
+}
+
+.sidebar svg {
+  min-width: 15px;
+}
+.sidebar span svg {
+  display: inline-table;
+  float: right;
+  text-align: right;
+  vertical-align: 0%;
+  background-color: transparent;
+  border: none;
+}
+.arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.gill {
+  font-family: 'Gill Sans', sans-serif;
+}
+.arimo {
+  font-family: 'Arimo', sans-serif;
+}
+.sidebar-position-icon {
+  text-align: right;
+}
+.georgia {
+  font-family: Georgia, serif;
+}
+.sidebar span {
+  width: 0;
+  height: 0;
+  padding: 0 15px;
+  transition: width 0.3s ease;
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+  font-size: 19px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.colored1 {
+  color:white;
+}
+.colored2 {
+  background-color: #bfdbfe;
+  color: #0d9488;
+  margin: 4px;
+  border-radius: 8px;
+}
+.colored3 .dot {
+  color: #0F766E;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: -10px;
+}
+.colored3 .dotlabel {
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar--open {
+  width: 250px;
+  transition: width 0.3s ease;
+}
+
+.sidebar--open .sidebar-position span {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.trigger {
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px 15px 0px;
+}
+.figmafirstdiv {
+  box-sizing: border-box;
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.figmaseconddiv {
+  background: rgba(249, 249, 249, 0.06);
+  height: auto;
+  padding: 20px 80px 20px 80px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+  border: 1px solid rgba(69, 70, 70, 0.12);
+}
+.figmah1 {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 32px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+
+  color: #454646;
+}
+.figmainput {
+  margin-top: 5px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  border: 1px solid gainsboro;
+  padding-left: 10px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.figmafirstbutton {
+  margin-top: 10px;
+  width: 400.34px;
+  height: 40px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  background: #1a4d8c;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+}
+.outerheader {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-top: 5px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: #454646;
+}
+.figmathirddiv {
+  width: auto;
+  margin-top: 5px;
+  height: auto;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border: 1px solid rgba(69, 70, 70, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+}
+.figmacheckbox {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.figmasecondinput {
+  width: 100%;
+  height: 35px;
+  margin: 10px;
+
+  background: #fbfbfc;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+}
+.paynow {
+  width: 400px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 10px;
+  background: #6ab783;
+  border-radius: 5px;
+}
+.figmathirdinput {
+  width: 100%;
+  height: 35px;
+  margin: 10px 40px;
+
+  background: #fbfbfc;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+}
+.first {
+  background-image: url('https://source.unsplash.com/MP0IUfwrn0A');
+}
+.imagelandingpage {
+  background-image: url('./Pages/landingpages/img/9.jpg');
+}
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+
+  border-left: 30px solid red;
+}
+.imagesecondlandingpage {
+  background-image: url('./Pages/landingpages/img/j.jpg');
+}
+.imagethirdlandingpage {
+  background-image: url('./Pages/landingpages/img/f1.jpg');
+}
+.thumbs-wrapper {
+  display: none;
+}
+
+.imageforthlandingpage{
+  background-image: url('./Pages/landingpages/img/news-event.avif');
+}
+.imagefifthlandingpage{
+  background-image: url('./Pages/landingpages/img/img.jpg');
+}
+.newsEvent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width:100%
+}
+.react-datepicker__calendar-icon{
+  height:20px;
+  width:20px;
+  position: absolute;
+  margin-left:28vh;
+  margin-top:1vh;
+}
+.react-datepicker {
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 28px;
+  border: 0;
+  width:100%;
+}
+.react-datepicker .react-datepicker__triangle {
+  display: none;
+}
+.react-datepicker  .react-datepicker__header {
+  background-color: white;
+  border-bottom: 0;
+}
+.react-datepicker .react-datepicker__navigation {
+  background: #ffffff !important;
+  border: 1px solid #dddddd !important;
+  border-radius: 8px !important;
+  outline: none;
+  margin: 15px;
+}
+.react-datepicker .react-datepicker__navigation span{
+  top: 16%;
+  right: 0;
+  left: 0;
+}
+.react-datepicker .react-datepicker__navigation span ::before{
+  top: 16%;
+  right: 0;
+  left: 0;
+}
+.mfimage{
+  background-image: url('./Pages/madhupurLandingPage/img/ci.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
